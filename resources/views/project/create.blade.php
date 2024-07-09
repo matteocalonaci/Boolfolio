@@ -1,55 +1,36 @@
 @extends('layouts.layout')
 
 @section('content')
-    
-
-<form method="POST" action="{{ route('') }}">
+<form method="POST" action="{{ route("project.store") }} class="p-5" ">
     @csrf
     <div class="mb-3">
-        <label class="form-label">name</label>
-        <input type="text" class="form-control" name="name" required value="{{ old('name') }}">
-        @error('name')
-            <div>{{ $message }}</div>
-        @enderror
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" name="name">
     </div>
     <div class="mb-3">
-        <label class="form-label">description</label>
-        <textarea type="text" class="form-control" name="description" required>{{ old('description') }}</textarea>
-        @error('description')
-            <div>{{ $message }}</div>
-        @enderror
+        <label class="form-label">Description</label>
+        <input type="text" class="form-control" name="description">
     </div>
     <div class="mb-3">
-        <label class="form-label">price</label>
-        <input type="number" min="0.99" max="999.99" step="0.01" class="form-control"
-            name="price" required value="{{ old('price') }}">
-        @error('price')
-            <div>{{ $message }}</div>
-        @enderror
+        <label class="form-label">Cration date</label>
+        <input type="text" class="form-control" name="price">
     </div>
     <div class="mb-3">
-        <label class="form-label">release_year</label>
-        <input type="number" min="1980" max="2024" class="form-control" name="release_year"
-        required value="{{ old('release_year') }}">
-                        @error('release_year')
-                            <div>{{ $message }}</div>
-                        @enderror
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">cover_image</label>
-                        <input type="text" class="form-control" name="cover_image" required value="{{ old('cover_image') }}">
-                        @error('cover_image')
-                            <div>{{ $message }}</div>
-                        @enderror
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">vote</label>
-                        <input type="number" min="0" max="10" class="form-control" name="vote" required value="{{ old('vote') }}">
-                        @error('vote')
-                            <div>{{ $message }}</div>
-                        @enderror
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-
-                @endsection
+        <label class="form-label">Is complited</label>
+        <input type="text" class="form-control" name="release_year">
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Yes
+        </label>
+      </div>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+          No
+        </label>
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+@endsection
