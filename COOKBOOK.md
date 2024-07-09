@@ -1,4 +1,4 @@
-Seguono gli passaggi utilizzati per realizzare questo template a partire dal precedente.
+Seguono i passaggi utilizzati per realizzare questo template a partire dal precedente.
 
 # REFACTORING DASHBOARD - LAYOUTS E VIEWS
 
