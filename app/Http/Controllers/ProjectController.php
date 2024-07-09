@@ -18,7 +18,7 @@ class ProjectController extends Controller
                 'catalogo' => $catalogo,
 
             ];
-        return view('projects.index', $data);
+        return view('project.index', $data);
     }
 
     /**
@@ -26,7 +26,7 @@ class ProjectController extends Controller
      */
     public function create()
     {
-        return view('projects.create');
+        return view('project.create');
     }
 
     /**
@@ -55,7 +55,7 @@ class ProjectController extends Controller
         $data = [
             'project' => $project,
         ];
-        return view('projects.show', $data);
+        return view('project.show', $data);
     }
 
     /**
