@@ -21,3 +21,4 @@ class ProjectsTableSeeder extends Seeder
         $newProject->save();
     }
 }
+
