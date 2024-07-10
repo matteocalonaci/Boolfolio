@@ -13,11 +13,11 @@
         </div>
         <div class="mb-3">
             <label class="form-label">Cration date</label>
-            <input type="text" class="form-control" name="price">
+            <input type="text" class="form-control" name="creationDate">
         </div>
         <div class="mb-3">
             <label class="form-label">Is complited</label>
-            <input type="text" class="form-control" name="release_year">
+            <input type="text" class="form-control" name="isComplited">
         </div>
         
         <button type="submit" class="btn btn-primary">Submit</button>
