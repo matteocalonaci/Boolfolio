@@ -43,7 +43,8 @@ class ProjectController extends Controller
 
         $newProject = new Project();
         $newProject->fill($data);
-
+        dump($data);
+        
         $newProject->save();
         return redirect()->route('project.show', ['project' => $newProject]);
     }
