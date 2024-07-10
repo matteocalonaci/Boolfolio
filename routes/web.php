@@ -14,6 +14,7 @@ use App\Http\Controllers\ProjectController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::resource('/project',ProjectController::class );
 
 Route::get('/', function () {
     return view('welcome');
