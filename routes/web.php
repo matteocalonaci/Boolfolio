@@ -18,7 +18,6 @@ use App\Http\Controllers\ProjectController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::resource('/project',ProjectController::class );
 
 Route::middleware(['auth'])
     ->prefix('admin') //definisce il prefisso "admin/" per le rotte di questo gruppo
@@ -29,6 +28,7 @@ Route::middleware(['auth'])
         // - il percorso "/" diventa "admin/"
         // - il nome della rotta ->name("dashboard") diventa ->name("admin.dashboard")
         Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
+        Route::resource('/project',ProjectController::class );
     });
 
 require __DIR__ . '/auth.php';
