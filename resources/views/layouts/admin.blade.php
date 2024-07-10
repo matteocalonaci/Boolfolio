@@ -55,6 +55,12 @@
                                 </form>
                             </li>
 
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="{{route('admin.project.create')}}">
+                                    <i class="fa-solid fa-plus fa-lg fa-fw me-2"></i>create
+                                </a>
+                            </li>
+
                         </ul>
 
                     </div>
