@@ -39,7 +39,7 @@ class TypeController extends Controller
         $data = $request->validate([
             "name" => "required|min:5|max:50",
             "description" => "required|min:10|max:2000",
-            "creation_date" => "required|min:5|max:50",
+            "icon" => "required|min:5|max:50",
         ]);
         $newType = new Type();
         $newType->fill($data);
@@ -53,7 +53,7 @@ class TypeController extends Controller
     public function show(Type $type)
     {
         $data = [
-            'tyoe' => $type,
+            'type' => $type,
         ];
         return view('admin.type.show', $data);
     }
@@ -64,7 +64,7 @@ class TypeController extends Controller
     public function edit(Type $type)
     {
         $data = [
-            'tyoe' => $type,
+            'type' => $type,
         ];
         return view('admin.type.edit', $data);
     }

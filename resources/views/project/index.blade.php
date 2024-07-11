@@ -6,7 +6,7 @@
 <div class="card_container">
 @foreach ($catalogo as $progetti)
 <div class="card">
-<h3>Project Name: {{$progetti->name}}</h3>
+    <h3 class="mt-4"> <a href="{{route("admin.project.show", $progetti)}}">Nome Type {{ $progetti->name}}</a></h3>
 <p>Description: {{$progetti->description}}</p>
 <p>creation date: {{$progetti->creation_date}}</p>
 

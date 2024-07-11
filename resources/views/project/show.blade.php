@@ -5,7 +5,7 @@
 
 <div class="card_container">
     <div class="card">
-	<ul>
+	<<ul>
 		<li class="mt-4">Nome progetto: {{ $project['name'] }}</li>
 		<li>Descrizione: {{ $project['description'] }}</li>
 		<li>Data di creazione: {{ $project['creation_date'] }}</li>

@@ -16,13 +16,13 @@ class TypeSeeder extends Seeder
         $newType = new Type();
         $newType->name = 'Front-end';
         $newType->description = 'A Front-End Developer is someone who creates websites and web applications. The difference between Front-End and Back-End is that Front-End refers to how a web page looks, while back-end refers to how it works.';
-        $newType->icon ='fa-solid fa-laptop';
+        $newType->icon ="fa-solid fa-laptop";
         $newType->save();
 
         $newType = new Type();
         $newType->name = 'Back-end';
         $newType->description = 'The Back-end developer works "behind the scenes" of a site or web application and takes care of its operation on the data and server side, therefore on what users do not see when visiting the site.';
-        $newType->icon ='fa-solid fa-database';
+        $newType->icon ="fa-solid fa-database";
         $newType->save();
 
         $newType = new Type();
@@ -34,7 +34,7 @@ class TypeSeeder extends Seeder
         $newType = new Type();
         $newType->name = 'Designer';
         $newType->description = 'The design engineer, also known as a design engineer, is the professional figure responsible for carrying out complex tasks in the design, development and testing of the physical components of products and systems.';
-        $newType->icon ='fa-solid fa-pen-nib';
+        $newType->icon ="fa-solid fa-pen-nib";
         $newType->save();
     }
 }
