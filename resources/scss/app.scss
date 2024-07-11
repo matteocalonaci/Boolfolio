@@ -1,1 +1,26 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+.card_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 22rem;
+    height: 15rem;
+    margin: 1rem;
+    background-color: rgba(255, 255, 255, 0.118);
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+a {
+    color: plum;
+    padding: 0.3rem;
+    text-decoration: none;
+    background-color: rgba(193, 126, 255, 0.356);
+    border-radius: 5rem;
+}
+

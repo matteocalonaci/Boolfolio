@@ -9,6 +9,6 @@
 <p>Description: {{$progetti->description}}</p>
 <p>creation date: {{$progetti->creation_date}}</p>
 
-    
+
 @endforeach
 @endsection
