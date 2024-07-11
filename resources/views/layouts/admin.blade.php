@@ -67,6 +67,12 @@
                                 </a>
                             </li>
 
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="{{route('admin.type.create')}}">
+                                    <i class="fa-solid fa-t me-2"></i>Type
+                                </a>
+                            </li>
+
                         </ul>
 
                     </div>

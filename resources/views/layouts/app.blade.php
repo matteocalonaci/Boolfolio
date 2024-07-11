@@ -79,6 +79,8 @@
                                         href="{{ route('admin.dashboard') }}">{{ __('Dashboard') }}</a>
                                         <a class="dropdown-item"
                                         href="{{ route('admin.project.index') }}">{{ __('Project') }}</a>
+                                        <a class="dropdown-item"
+                                        href="{{ route('admin.type.index') }}">{{ __('Type') }}</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
