@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            //creazione colonne tabella 
+            //creazione colonne tabella
             $table->string("name");
-            $table->string("description");
+            $table->text("description");
             $table->date("creation_date");
             $table->boolean("is_completed");
         });
