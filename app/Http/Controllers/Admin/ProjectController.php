@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use App\Models\Project;
 use Illuminate\Http\Request;
 
@@ -26,7 +27,7 @@ class ProjectController extends Controller
      */
     public function create()
     {
-        return view('project.create');
+        return view('admin.project.create');
     }
 
     /**
@@ -44,9 +45,9 @@ class ProjectController extends Controller
         $newProject->is_completed=false;
         $newProject->fill($data);
         dump($data);
-        
+
         $newProject->save();
-        return redirect()->route('project.show', ['project' => $newProject]);
+        return redirect()->route('admin.project.show', ['project' => $newProject]);
     }
     /**
      * Display the specified resource.
@@ -56,7 +57,7 @@ class ProjectController extends Controller
         $data = [
             'project' => $project,
         ];
-        return view('project.show', $data);
+        return view('admin.project.show', $data);
     }
 
     /**
@@ -67,7 +68,7 @@ class ProjectController extends Controller
         $data = [
             'project' => $project,
         ];
-        return view('project.edit', $data);
+        return view('admin.project.edit', $data);
     }
 
     /**
@@ -83,7 +84,7 @@ class ProjectController extends Controller
 
         $project->save();
 
-        return redirect()->route('project.show', ['project'=> $project] );
+        return redirect()->route('admin.project.show', ['project'=> $project] );
     }
 
 
@@ -93,6 +94,6 @@ class ProjectController extends Controller
     public function destroy(Project $project)
     {
         $project->delete();
-        return redirect()->route('project.index');
+        return redirect()->route('admin.project.index');
     }
 }
